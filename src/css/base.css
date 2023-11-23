@@ -9,6 +9,9 @@
 }
 
 body {
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+
   background-color: var(--clr-black);
 }
 
@@ -35,6 +38,18 @@ span {
   max-width: 375px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
 }
 
 .section {
