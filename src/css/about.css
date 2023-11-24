@@ -1,0 +1,37 @@
+.page-about {
+  background-image: url(../img/about/about-bg-mobile.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.about-title {
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.37;
+  letter-spacing: -0.03em;
+}
+
+.about-primary-text {
+  margin: 0 auto 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.04em;
+}
+.about-secondary-text {
+  margin: 0 auto 50px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.04em;
+}
+.girl-img {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 375px) {
+  .about-main-box {
+    width: 100%;
+  }
+}
