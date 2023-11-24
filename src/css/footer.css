@@ -1,5 +1,5 @@
 .page-footer {
-  height: 649px;
+  /* height: 649px; */
   background-image: url(../img/footer/footer-mobile.png);
   background-position: 50% 100%;
   background-size: 375px;
@@ -15,10 +15,7 @@
 }
 
 .footer-menu-link {
-  color: var(--white, #fcf9f9);
-  font-family: Manrope;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 1.28; /* 128.571% */
   text-transform: uppercase;
@@ -33,27 +30,30 @@
   column-gap: 40px;
   margin-bottom: 40px;
 }
-.footer-menu-item-first {
-  order: 1;
-  width: calc((100% - 40px) / 2);
-}
-.footer-menu-item-second {
-  order: 3;
-  width: calc((100% - 40px) / 2);
-}
-.footer-menu-item-third {
-  order: 2;
-}
-.footer-menu-item-forth {
-  order: 4;
+@media screen and (max-width: 767px) {
+  .footer-menu-item-first {
+    order: 1;
+    width: calc((100% - 40px) / 2);
+  }
+  .footer-menu-item-second {
+    order: 3;
+    width: calc((100% - 40px) / 2);
+  }
+  .footer-menu-item-third {
+    order: 2;
+    width: calc((100% - 40px) / 2);
+  }
+  .footer-menu-item-forth {
+    order: 4;
+    width: calc((100% - 40px) / 2);
+  }
 }
 .footer-title {
-  color: var(--white, #fcf9f9);
   font-size: 44px;
   font-weight: 400;
   line-height: 1.22; /* 122.727% */
-  letter-spacing: -0.03em;
-  width: 335px;
+  letter-spacing: -0.033em;
+  max-width: 335px;
 }
 /* FOOTER TABLET */
 @media screen and (min-width: 768px) {
@@ -79,19 +79,10 @@
     padding-bottom: 40px;
     font-size: 54px;
     line-height: 1.18; /* 118.519% */
-    letter-spacing: -0.03em;
-    width: 521px;
+    letter-spacing: -0.033em;
+    max-width: 521px;
   }
-  .footer-menu-item-first {
-    width: fit-content;
-  }
-  .footer-menu-item-second {
-    order: 2;
-    width: fit-content;
-  }
-  .footer-menu-item-third {
-    order: 3;
-  }
+
   .footer-menu {
     display: inline-flex;
     flex-direction: row;
@@ -124,8 +115,8 @@
   .footer-title {
     font-size: 64px;
     line-height: 1.15; /* 115.625% */
-    letter-spacing: -0.03em;
-    width: 754px;
+    letter-spacing: -0.033em;
+    max-width: 754px;
   }
   .footer-menu {
     display: inline-flex;
