@@ -1,18 +1,3 @@
-.hero-title {
-  margin: 0;
-  margin-bottom: 20px;
-  max-width: 335px;
-  font-weight: 400;
-  font-size: 44px;
-  line-height: 1.23;
-  letter-spacing: -0.033em;
-}
-.hero-link {
-  display: flex;
-  padding: 14px 36px;
-  border-radius: 15px;
-  border: 1px solid rgba(252, 249, 249, 0.1);
-}
 @media screen and (max-width: 767px) {
   .container {
     max-width: 375px;
@@ -25,6 +10,21 @@
   }
   .hero-img-sock {
     display: none;
+  }
+  .hero-title {
+    margin: 0;
+    margin-bottom: 20px;
+    max-width: 335px;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 1.23;
+    letter-spacing: -0.033em;
+  }
+  .hero-link {
+    display: flex;
+    padding: 14px 36px;
+    border-radius: 15px;
+    border: 1px solid rgba(252, 249, 249, 0.1);
   }
   .hero-link {
     display: flex;
@@ -51,6 +51,77 @@
   }
   .hero-img-girl {
     max-width: 100%;
+    margin: 0 auto;
+    border-radius: 4px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .hero-picture {
+    background-image: url(../img/hero/hero-small-tablet@2x.png);
+    background-repeat: no-repeat;
+  }
+  .hero-title {
+    width: 549px;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.19; /* 118.519% */
+    letter-spacing: -0.03em;
+  }
+  .hero-con-1 {
+    display: flex;
+  }
+  .hero-con {
+    margin-right: 40px;
+  }
+  .hero-icon-star {
+    fill: var(--clr-yellow);
+    margin-bottom: 16px;
+  }
+  .hero-text {
+    width: 115px;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.04em;
+  }
+  .hero-star-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-link {
+    display: flex;
+    align-items: center;
+    width: 72px;
+    padding: 14px 36px;
+    margin-bottom: 40px;
+    margin-left: 70px;
+    border-radius: 15px;
+    border: 1px solid rgba(252, 249, 249, 0.1);
+    gap: 10px;
+  }
+  .hero-link-text {
+    color: var(--clr-white);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+  }
+  .hero-icon-arrow {
+    fill: var(--clr-yellow);
+  }
+  .hero-picture {
+    display: flex;
+    align-items: flex-end;
+  }
+  .hero-img-girl {
     margin: 0 auto;
     border-radius: 4px;
     background-size: cover;
