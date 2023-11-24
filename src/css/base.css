@@ -34,8 +34,7 @@ span {
 }
 
 .container {
-  width: 320px;
-  max-width: 375px;
+  width: 365px;
   margin: 0 auto;
   padding: 0 15px;
 }
