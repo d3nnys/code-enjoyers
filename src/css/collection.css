@@ -1,6 +1,6 @@
 .collection {
   display: block;
-  background-image: url(../img/collection/collection-bg-mobile.png);
+  background-image: url(/img/collection/collection-bg-mobile.png);
   background-repeat: no-repeat;
   background-position: left 283px;
   padding-top: 18px;
@@ -48,7 +48,7 @@
 
 @media screen and (min-width: 768px) {
   .collection {
-    background-image: url(../img/collection/collection-bg-tablet.png);
+    background-image: url(/img/collection/collection-bg-tablet.png);
     background-position: left 260px;
     padding-top: 50px;
     padding-bottom: 100px;
@@ -86,7 +86,7 @@
 
 @media screen and (min-width: 1280px) {
   .collection {
-    background-image: url(../img/collection/collection-bg-desktop.png);
+    background-image: url(/img/collection/collection-bg-desktop.png);
     background-position: left 279px;
     background-size: auto;
     padding-top: 70px;
@@ -105,7 +105,7 @@
 }
 
 .collection-main-photo {
-  background-image: url(../img/collection/collection-girl-mobile.jpg);
+  background-image: url(/img/collection/collection-girl-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -117,13 +117,13 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .collection-main-photo {
-    background-image: url(../img/collection/collection-girl-mobile@2x.jpg);
+    background-image: url(/img/collection/collection-girl-mobile@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .collection-main-photo {
-    background-image: url(../img/collection/collection-girl-tablet.jpg);
+    background-image: url(/img/collection/collection-girl-tablet.jpg);
     background-repeat: no-repeat;
     background-position: center;
     height: 776px;
@@ -134,13 +134,13 @@
   screen and (min-width: 768px) and (min-resolution: 2dppx),
   screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
   .collection-main-photo {
-    background-image: url(../img/collection/collection-girl-tablet@2x.jpg);
+    background-image: url(/img/collection/collection-girl-tablet@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1280px) {
   .collection-main-photo {
-    background-image: url(../img/collection/collection-girl-desktop.jpg);
+    background-image: url(/img/collection/collection-girl-desktop.jpg);
     background-repeat: no-repeat;
     background-position: center;
     max-width: 1440px;
@@ -151,6 +151,6 @@
   screen and (min-width: 1280px) and (min-resolution: 2dppx),
   screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2) {
   .collection-main-photo {
-    background-image: url(../img/collection/collection-girl-desktop@2x.jpg);
+    background-image: url(/img/collection/collection-girl-desktop@2x.jpg);
   }
 }
