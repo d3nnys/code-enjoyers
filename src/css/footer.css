@@ -1,9 +1,9 @@
 .page-footer {
-  /* height: 649px; */
   background-image: url(../img/footer/footer-mobile.png);
   background-position: 50% 100%;
   background-size: 375px;
   background-repeat: no-repeat;
+  padding: 40px 0 292px;
 }
 
 @media screen and (min-resolution: 192dpi),
@@ -21,7 +21,6 @@
   text-transform: uppercase;
 }
 .footer-menu {
-  padding-top: 40px;
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -41,31 +40,28 @@
   }
   .footer-menu-item-third {
     order: 2;
-    width: calc((100% - 40px) / 2);
   }
   .footer-menu-item-forth {
     order: 4;
     width: calc((100% - 40px) / 2);
   }
 }
+
 .footer-title {
   font-size: 44px;
   font-weight: 400;
   line-height: 1.22; /* 122.727% */
   letter-spacing: -0.033em;
-  max-width: 335px;
+  width: 335px;
 }
 /* FOOTER TABLET */
 @media screen and (min-width: 768px) {
-  .container {
-    min-width: 768px;
-  }
   .page-footer {
-    padding-left: 17px;
-    height: 370px;
+    /* padding-left: 17px; */
     background-image: url(../img/footer/footer-bg-tablet.png);
-    background-position: 100% 50%;
+    background-position: top right;
     background-size: 174px 370px;
+    padding-bottom: 40px;
   }
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
@@ -76,11 +72,10 @@
   }
 
   .footer-title {
-    padding-bottom: 40px;
     font-size: 54px;
     line-height: 1.18; /* 118.519% */
     letter-spacing: -0.033em;
-    max-width: 521px;
+    width: 521px;
   }
 
   .footer-menu {
@@ -90,20 +85,16 @@
     row-gap: 0;
     align-items: flex-start;
     column-gap: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
   }
 }
 /* FOOTER DESKTOP */
 @media screen and (min-width: 1280px) {
-  .container {
-    min-width: 1280px;
-  }
   .page-footer {
-    padding-left: 85px;
-    height: 363px;
+    /* padding-left: 85px; */
     background-image: url(../img/footer/footer-bg-desktop.png);
-    background-position: 100% 50%;
     background-size: 336px 363px;
+    background-position: top right;
   }
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
@@ -116,7 +107,7 @@
     font-size: 64px;
     line-height: 1.15; /* 115.625% */
     letter-spacing: -0.033em;
-    max-width: 754px;
+    width: 754px;
   }
   .footer-menu {
     display: inline-flex;
