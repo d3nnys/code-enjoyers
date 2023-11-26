@@ -1,0 +1,62 @@
+.page-about {
+  background-image: url(/img/about/about-bg-mobile.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.about-title {
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.37;
+  letter-spacing: -0.03em;
+}
+
+@media screen and (max-width: 767px) {
+  .about-primary-text,
+  .about-secondary-text {
+    margin: 0 auto;
+  }
+  .girl-img {
+    margin: 0 auto;
+  }
+}
+
+.about-primary-text {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.04em;
+}
+.about-secondary-text {
+  margin-bottom: 50px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.04em;
+}
+
+@media screen and (min-width: 768px) {
+  .about-title {
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 1.45;
+  }
+  .about-primary-text {
+    font-size: 16px;
+    max-width: 704px;
+  }
+  .about-secondary-text {
+    margin-bottom: 40px;
+    font-size: 16px;
+    max-width: 704px;
+  }
+  .page-about {
+    background-image: url(/img/about/about-bg-tablet.png);
+  }
+  .girl-img {
+    width: 704px;
+    height: 545px;
+  }
+}
