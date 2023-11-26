@@ -1,0 +1,113 @@
+/* MOBILE */
+.mobile-menu {
+  background-color: #ecd979;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 274px;
+  height: 100%;
+  z-index: 9999999;
+  padding-top: 20px;
+  padding-bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: auto;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+@media screen and (max-height: 767px) {
+  .mobile-menu {
+    background-image: url(../src/img/mobile-menu/bg-menu-mobile.webp);
+    background-repeat: no-repeat;
+    background-position: center bottom -51px;
+  }
+}
+  
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+(min-resolution: 2dppx) and (max-width: 767px),
+(min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .mobile-menuu {
+    background-image: url(../src/img/mobile-menu/bg-menu-mobile@2x.webp);
+  }
+}
+    
+.menu-tel-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tel-styles {
+  color: #1c2225;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17; /* 116.667% */
+  text-transform: uppercase;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(28, 34, 37, 0.10);
+}
+
+.mobile-menu-close-btn {
+  background-color: transparent;
+  stroke: #1c2225;
+  border: none;
+  width: 36px;
+  height: 36px;
+}
+  
+.menu-close-btn-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  right: 0;
+  gap: 20px;
+}
+
+.mobile-menu-link {
+  color: #1c2225;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29; /* 128.571% */
+  text-transform: uppercase;
+  text-align: right;
+}
+
+/* TABLET */
+@media screen and (min-height: 768px) {
+  .mobile-menu {
+    background-image: url(../src/img/mobile-menu/bg-menu-tablet.webp);
+    background-repeat: no-repeat;
+    background-position: center bottom -50%;
+  }
+}
+  
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+(min-resolution: 2dppx) and (max-width: 767px),
+(min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .mobile-menuu{
+    background-image: url(../src/img/mobile-menu/bg-menu-tablet@2x.webp);
+  }
+}
+
+@media screen and (min-height: 768px) {
+  .tel-styles {
+    font-size: 14px;
+    line-height: 1.43; 
+    padding: 14px 28px;
+  }
+}
