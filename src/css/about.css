@@ -60,3 +60,26 @@
     height: 545px;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .page-about {
+    background-image: url(/img/about/about-bg-desktop.png);
+  }
+  .about-main-box {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 436px;
+  }
+  .girl-img {
+    width: 594px;
+    height: 545px;
+  }
+}
