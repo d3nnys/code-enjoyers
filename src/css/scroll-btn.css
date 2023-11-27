@@ -1,0 +1,46 @@
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: clamp(40px, 6.5vw, 70px);
+  height: clamp(40px, 6.5vw, 70px);
+  background-color: #1c2225;
+  color: var(--clr-white);
+  border: 1px solid var(--clr-yellow);
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 5px;
+  transition: opacity 0.3s ease-in-out;
+  box-shadow: 0 0 70px 5px rgba(236, 217, 121, 0.35);
+  z-index: 50;
+}
+
+#scrollTopBtn:hover {
+  color: red;
+}
+
+.scroll-icon {
+  width: clamp(13px, 2.5vw, 30px);
+  height: clamp(13px, 2.5vw, 30px);
+  transition: transform var(--tns-cubic);
+  fill: var(--clr-yellow);
+}
+
+.arrow-up:hover .scroll-icon,
+.arrow-up:focus .scroll-icon {
+  transform: translateY(-45%);
+}
+
+.scroll-icon-active .scroll-icon {
+  animation: translateYAnimation 0.5s forwards;
+}
+
+@keyframes translateYAnimation {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-45%);
+  }
+}

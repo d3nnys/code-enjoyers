@@ -1,9 +1,11 @@
 /* HEADER MOBILE */
 .page-header {
-  background-color: #1c2225;
-  padding-top: 20px;
   position: sticky;
   top: 0;
+  z-index: 500;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #1c2225;
 }
 
 .header-container {
@@ -102,22 +104,22 @@
 
   .header-tel {
     display: flex;
-    color: #FCF9F9;
+    color: #fcf9f9;
     font-size: 14px;
-    line-height: 1.43; /* 142.857% */ 
+    line-height: 1.43; /* 142.857% */
     text-transform: uppercase;
     gap: 10px;
     padding: 14px 28px;
     border-radius: 15px;
-    border: 1px solid rgba(252, 249, 249, 0.10);
+    border: 1px solid rgba(252, 249, 249, 0.1);
     transition: border-color 300ms ease-in-out;
     margin-right: 20px;
   }
-  
+
   .header-tel:hover,
   .header-tel:focus {
     border-color: #ecd979;
-  } 
+  }
 
   .mobile-menu-open-btn {
     display: none;
