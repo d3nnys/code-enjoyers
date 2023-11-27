@@ -114,13 +114,14 @@
     padding: 14px 28px;
     border-radius: 15px;
     border: 1px solid rgba(252, 249, 249, 0.1);
-    transition: border-color var(--tns-cubic);
+    transition: border-color var(--tns-cubic), box-shadow var(--tns-cubic);
     margin-right: 20px;
   }
 
   .header-tel:hover,
   .header-tel:focus {
     border-color: var(--clr-yellow);
+    box-shadow: 0 0 10px 5px rgba(236, 217, 121, 0.35);
   }
 
   .mobile-menu-open-btn {

@@ -25,6 +25,7 @@
     transform: scale(1) rotateZ(360deg);
   }
 }
+
 @keyframes rotate-scale-up {
   0% {
     -webkit-transform: scale(1) rotateZ(0);
@@ -46,8 +47,7 @@
 
 .hero-link:hover,
 .hero-link:focus {
-  border-radius: 15px;
-  border: 1px solid var(--clr-yellow);
+  border-color: var(--clr-yellow);
   box-shadow: 0 0 10px 5px rgba(236, 217, 121, 0.35);
 }
 
@@ -105,7 +105,6 @@
     fill: var(--clr-yellow);
   }
   .hero-img-girl {
-    max-width: 100%;
     margin: 0 auto;
     border-radius: 4px;
     background-size: cover;
@@ -136,14 +135,13 @@
   }
   .hero-con {
     padding-top: 26px;
-    margin-right: 40px;
   }
   .hero-icon-star {
     fill: var(--clr-yellow);
     margin-bottom: 16px;
   }
   .hero-text {
-    width: 115px;
+    max-width: 115px;
     text-align: center;
     font-size: 16px;
     font-style: normal;
@@ -155,6 +153,7 @@
   .hero-box {
     display: flex;
     flex-direction: column;
+    margin-left: auto;
   }
   .hero-star-con {
     display: flex;
@@ -189,18 +188,12 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    width: 100%;
   }
   .hero-img-girl {
     margin: 0 auto;
     border-radius: 4px;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 40px;
-  }
-  .hero-img-sock {
-    margin-bottom: -57px;
-    height: 193.909px;
   }
 }
 
@@ -219,14 +212,12 @@
     padding-top: 15px;
   }
   .hero-img-girl {
-    width: 392px;
-    height: 545px;
     margin-right: 50px;
   }
   .hero-box {
     margin-left: auto;
   }
   .hero-title {
-    width: 518px;
+    max-width: 518px;
   }
 }

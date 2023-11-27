@@ -58,8 +58,7 @@
     justify-content: center;
     gap: 20px;
     width: 100%;
-    padding-top: 100px;
-    /* height: 100vh; */
+    padding-top: 150px;
   }
 
   .mobile-menu-link {
@@ -91,12 +90,12 @@
   }
 }
 
-@media screen and (max-height: 1279px) {
+@media screen and (max-width: 767px) {
   .mobile-menu {
-    background-image: url(/img/mobile-menu/bg-menu-mobile.webp);
+    background-image: url(/img/mobile-menu/bg-menu-mobile.png);
     background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: 340px 302px;
+    background-position: center bottom 38px;
+    background-size: auto 302px;
   }
 }
 
@@ -104,16 +103,22 @@
   (min-resolution: 2dppx) and (max-width: 767px),
   (min-device-pixel-ratio: 2) and (max-width: 767px) {
   .mobile-menu {
-    background-image: url(/img/mobile-menu/bg-menu-mobile@2x.webp);
+    background-image: url(/img/mobile-menu/bg-menu-mobile@2x.png);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .mobile-menu {
-    background-image: url(/img/mobile-menu/bg-menu-tablet.webp);
+    width: 440px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-image: url(/img/mobile-menu/bg-menu-tablet.png);
     background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: 545px 484px;
+    background-position: center bottom 38px;
+    background-size: auto 484px;
+  }
+  .mobile-menu-list {
+    padding-top: 60px;
   }
 }
 
@@ -121,7 +126,7 @@
   (min-resolution: 2dppx) and (max-width: 767px),
   (min-device-pixel-ratio: 2) and (max-width: 767px) {
   .mobile-menu {
-    background-image: url(/img/mobile-menu/bg-menu-tablet@2x.webp);
+    background-image: url(/img/mobile-menu/bg-menu-tablet@2x.png);
   }
 }
 

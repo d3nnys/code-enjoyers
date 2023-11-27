@@ -60,7 +60,7 @@
   font-weight: 400;
   line-height: 1.22;
   letter-spacing: -0.033em;
-  width: 335px;
+  max-width: 335px;
 }
 /* FOOTER TABLET */
 @media screen and (min-width: 768px) {
@@ -81,7 +81,7 @@
   .footer-title {
     font-size: 54px;
     line-height: 1.18;
-    width: 521px;
+    max-width: 521px;
   }
 
   .footer-menu {
@@ -109,7 +109,7 @@
   .footer-title {
     font-size: 64px;
     line-height: 1.15;
-    width: 754px;
+    max-width: 754px;
   }
   .footer-menu {
     margin-bottom: 117px;
