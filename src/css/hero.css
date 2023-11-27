@@ -1,17 +1,57 @@
+.hero-icon-arrow {
+  transition: transform var(--tns-cubic);
+}
+
 .hero-link {
-  transition: border var(--tns-cubic);
+  transition: border-color var(--tns-cubic), box-shadow var(--tns-cubic);
+}
+
+.hero-link:hover .rotate-scale-up {
+  -webkit-animation: rotate-scale-up 1s linear both;
+  animation: rotate-scale-up 1s linear both;
+}
+
+@-webkit-keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+
+.hero-link:hover .hero-icon-arrow {
+  transform: rotate(1turn);
 }
 
 .hero-link:hover,
 .hero-link:focus {
   border-radius: 15px;
   border: 1px solid var(--clr-yellow);
+  box-shadow: 0 0 10px 5px rgba(236, 217, 121, 0.35);
 }
 
 @media screen and (max-width: 767px) {
-  .container {
-    max-width: 375px;
-  }
   .hero-icon-star {
     display: none;
   }
@@ -124,6 +164,7 @@
   }
   .hero-link {
     display: flex;
+    justify-content: center;
     align-items: center;
     width: 90px;
     padding: 14px 39px;
