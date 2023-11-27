@@ -1,21 +1,125 @@
-.header {
-  padding: 20px 0;
+/* HEADER MOBILE */
+.page-header {
+  background-color: #1c2225;
+  padding-top: 20px;
+  position: sticky;
+  top: 0;
 }
 
-.nav-list {
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
 }
 
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+.header-menu-list {
+  display: none;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+.header-block {
+  display: flex;
+  align-items: center;
+}
+
+.header-tel {
+  display: none;
+}
+
+.header-media {
+  display: flex;
+  gap: 12px;
+}
+
+.header-media-link {
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  background-color: rgba(252, 249, 249, 0.1);
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 300ms ease-in-out, background-color 300ms ease-in-out;
+}
+
+.header-media-link:hover,
+.header-media-link:focus {
+  border-color: #ecd979;
+  background-color: transparent;
+}
+
+.header-media-icon {
+  fill: #fcf9f9;
+}
+
+.mobile-menu-open-btn {
+  width: 36px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  margin-left: 12px;
+}
+
+.mobile-menu-btn-icon {
+  stroke: #ecd979;
+}
+
+/* HEADER TABLET */
+@media screen and (min-width: 768px) {
+  .mobile-menu-open-btn {
+    width: 44px;
+    height: 30px;
+    margin-left: 20px;
+  }
+}
+
+/* HEADER DESKTOP */
+@media screen and (min-width: 1280px) {
+  .header-logo {
+    margin-right: 60px;
+  }
+
+  .header-menu-list {
+    display: flex;
+    gap: 25px;
+  }
+
+  .header-menu-link {
+    font-size: 14px;
+    line-height: 1.29; /* 128.571% */
+    text-transform: uppercase;
+    transition: color 300ms ease-in-out;
+  }
+
+  .header-menu-link:hover,
+  .header-menu-link:focus {
+    color: #ecd979;
+  }
+
+  .header-tel {
+    display: flex;
+    color: #FCF9F9;
+    font-size: 14px;
+    line-height: 1.43; /* 142.857% */ 
+    text-transform: uppercase;
+    gap: 10px;
+    padding: 14px 28px;
+    border-radius: 15px;
+    border: 1px solid rgba(252, 249, 249, 0.10);
+    transition: border-color 300ms ease-in-out;
+    margin-right: 20px;
+  }
+  
+  .header-tel:hover,
+  .header-tel:focus {
+    border-color: #ecd979;
+  } 
+
+  .mobile-menu-open-btn {
+    display: none;
+  }
 }
