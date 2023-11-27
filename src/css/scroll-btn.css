@@ -5,19 +5,17 @@
   right: 20px;
   width: clamp(40px, 6.5vw, 70px);
   height: clamp(40px, 6.5vw, 70px);
-  background-color: #1c2225;
+
+  padding: 5px;
   color: var(--clr-white);
+  background-color: var(--clr-black);
   border: 1px solid var(--clr-yellow);
   border-radius: 50%;
-  cursor: pointer;
-  padding: 5px;
-  transition: opacity 0.3s ease-in-out;
   box-shadow: 0 0 70px 5px rgba(236, 217, 121, 0.35);
-  z-index: 50;
-}
 
-#scrollTopBtn:hover {
-  color: red;
+  cursor: pointer;
+  transition: opacity var(--tns-cubic);
+  z-index: 50;
 }
 
 .scroll-icon {
