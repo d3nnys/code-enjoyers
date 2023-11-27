@@ -7,56 +7,64 @@
     <title>Vyshyvanka Vibes</title>
     
     <script type="module" crossorigin src="/code-enjoyers/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/code-enjoyers/assets/index-9415bfc9.css">
+    <link rel="stylesheet" href="/code-enjoyers/assets/index-7da17dda.css">
   </head>
   <body>
-    <header class="header">
+    <header class="page-header">
     <div class="container header-container">
         <nav class="header-nav">
             <a class="header-logo" href="./index.html">
-                <img
-                srcset="./src/img/header/logo.svg 1x, ./src/img/header/logo@2x.svg 2x"
-                src="./src/img/header/logo.svg" 
-                alt="logo" width="44" height="39" />
+                <img src="/code-enjoyers/assets/logo-da65b169.svg" alt="Logo" loading="lazy" />
             </a>
             <ul class="header-menu-list">
-                <li><a class="header-menu-link" href="#about">ABOUT US</a></li>
-                <li><a class="header-menu-link" href="#collection">OUR COLLECTION</a></li>
-                <li><a class="header-menu-link" href="#order">CUSTOMER ORDER</a></li>
-                <li><a class="header-menu-link" href="#testimonials">TESTIMONIALS</a></li>
+                <li class="header-menu-item">
+                    <a class="header-menu-link" href="#about">About us</a>
+                </li>
+                <li class="header-menu-item">
+                    <a class="header-menu-link" href="#collection">Our collection</a>
+                </li>
+                <li class="header-menu-item">
+                    <a class="header-menu-link" href="#order">CUSTOMER ORDER</a>
+                </li>
+                <li class="header-menu-item">
+                    <a class="header-menu-link" href="#testimonials">TEstimonials</a>
+                </li>
             </ul>
         </nav>
-        <a class="header-tel" href="tel:+380684439426">+380 (68) 443-94-26</a>
-        <ul class="header">
-            <li class="header-media-item">
-                <a class="header-media-link" href="https://www.facebook.com/goITclub/ " target="_blank">
-                    <svg class="header-media-icon" width="28" height="28">
-                        <use href="./src/img/icons.svg#icon-facebook"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="header-media-item">
-                <a class="header-media-link" href="https://www.instagram.com/goitclub/" target="_blank">
-                    <svg class="header-media-icon" width="28" height="28">
-                        <use href="./src/img/icons.svg#icon-instagram"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="header-media-item">
-                <a class="header-media-link" href="hhttps://www.youtube.com/c/GoIT" target="_blank">
-                    <svg class="header-media-icon" width="28" height="28">
-                        <use href="./src/img/icons.svg#icon-youtube"></use>
-                    </svg>
-                </a> 
-            </li>
-        </ul>
-        <button class="mobile-menu-open-btn" type="button">
-            <svg class="mobile-menu-btn-icon" width="36" height="24">
-                <use href="./src/img/header/logo.svg#icon-burger"></use>
-            </svg>
-        </button>       
+        <div class="header-block">
+            <a class="header-tel" href="tel:+380684439426">+380 (68) 443-94-26</a>
+            <ul class="header-media">
+                <li class="header-media-item">
+                    <a class="header-media-link" href="https://www.facebook.com/goITclub/ " target="_blank">
+                        <svg class="header-media-icon" width="28" height="28">
+                            <use href="/code-enjoyers/assets/icons-05f4c010.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header-media-item">
+                    <a class="header-media-link" href="https://www.instagram.com/goitclub/" target="_blank">
+                        <svg class="header-media-icon" width="28" height="28">
+                            <use href="/code-enjoyers/assets/icons-05f4c010.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header-media-item">
+                    <a class="header-media-link" href="https://www.youtube.com/c/GoIT" target="_blank">
+                        <svg class="header-media-icon" width="28" height="28">
+                            <use href="/code-enjoyers/assets/icons-05f4c010.svg#icon-youtube"></use>
+                        </svg>
+                    </a> 
+                </li> 
+            </ul>
+            <button class="mobile-menu-open-btn js-open-menu" type="button">
+                <svg class="mobile-menu-btn-icon" width="36" height="24">
+                    <use href="/code-enjoyers/assets/icons-05f4c010.svg#icon-burger"></use>
+                </svg>
+            </button> 
+        </div>
     </div>
 </header>
+
     <main>
       <section class="page-hero section">
   <div class="container">
@@ -580,22 +588,40 @@
   </div>
 </footer>
 
-    <div class="mobile-menu">
-    <div class="container mobile-menu-container">
-        <button class="mobile-menu-close-btn" type="button">
+    <div class="mobile-menu js-menu-container">
+    <div class="mobile-menu-block">
+        <a class="menu-tel" href="tel:+380684439426">+380 (68) 443-94-26</a>
+        <button class="menu-close-btn js-close-menu" type="button">
             <svg class="menu-close-btn-icon" width="36" height="36">
-                <use href="./src/img/icons.svg#icon-close"></use>
+                <use href="/code-enjoyers/assets/icons-05f4c010.svg#icon-close"></use>
             </svg> 
         </button>
-        <a class="mobile-menu-tel" href="tel:+380684439426">+380 (68) 443-94-26</a>
-        <ul class="mobile-menu-list">
-            <li><a class="mobile-menu-link" href="#about">ABOUT US</a></li>
-            <li><a class="mobile-menu-link" href="#collection">OUR COLLECTION</a></li>
-            <li><a class="mobile-menu-link" href="#order">CUSTOMER ORDER</a></li>
-            <li><a class="mobile-menu-link" href="#testimonials">TESTIMONIALS</a></li>
-        </ul>
     </div>
+    <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+            <a class="mobile-menu-link header-link" href="#about">About us</a>
+        </li>
+        <li class="mobile-menu-item">
+            <a class="mobile-menu-link header-link" href="#collection">Our collection</a>
+        </li>
+        <li class="mobile-menu-item">
+            <a class="mobile-menu-link header-link" href="#order">CUSTOMER ORDER</a>
+        </li>
+        <li class="mobile-menu-item">
+            <a class="mobile-menu-link header-link" href="#testimonials">TEstimonials</a>
+        </li>
+    </ul>  
 </div>
+
+
+
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
 
     
   </body>
