@@ -54,7 +54,7 @@
 .order-form-input {
   background-color: transparent;
   color: var(--clr-white);
-  width: 100%;
+  width: 90%;
   padding: 14px 16px;
   outline: none;
   border-radius: 15px;
@@ -81,7 +81,7 @@
 }
 
 .order-form-textarea {
-  width: 100%;
+  width: 90%;
   height: 196px;
   resize: none;
   outline: none;
