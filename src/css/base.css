@@ -50,13 +50,13 @@ span {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
-    width: 1280px;
+    max-width: 1120px; /*1280*/
   }
 }
 

@@ -1,0 +1,288 @@
+.order-img-wrapper {
+  background-image: url(/img/collection/collection-girl-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 550px;
+  margin-bottom: 80px;
+}
+
+@media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
+  .order-img-wrapper {
+    background-image: url(/img/collection/collection-girl-mobile@2x.jpg);
+  }
+}
+
+.order-ornament {
+  margin: 0 auto;
+}
+
+.order-title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.375;
+  letter-spacing: -0.03em;
+
+  margin-bottom: 40px;
+}
+
+.order-custom-title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.375;
+  letter-spacing: -0.03em;
+}
+
+@media screen and (min-width: 768px) {
+  .order-title {
+    font-size: 44px;
+    line-height: 1.31;
+    width: 542px;
+  }
+  .order-custom-title {
+    font-size: 44px;
+    line-height: 1.31;
+  }
+}
+
+.order-form-input-wrapper {
+  max-width: 335px;
+  margin-bottom: 20px;
+}
+
+.order-form-input {
+  background-color: transparent;
+  color: var(--clr-white);
+  width: 100%;
+  padding: 14px 16px;
+  outline: none;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+
+  transition: border-color var(--tns-cubic);
+}
+
+.order-form-input:focus {
+  border-color: rgba(252, 249, 249, 0.6);
+}
+
+.order-form-input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.02em;
+  color: rgba(252, 249, 249, 0.5);
+}
+
+.order-form-textarea-wrapper {
+  max-width: 335px;
+  margin-bottom: 40px;
+}
+
+.order-form-textarea {
+  width: 100%;
+  height: 196px;
+  resize: none;
+  outline: none;
+  color: var(--clr-white);
+  background-color: transparent;
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+
+  transition: border-color var(--tns-cubic);
+}
+
+.order-form-textarea:focus {
+  border-color: rgba(252, 249, 249, 0.6);
+}
+
+.order-form-textarea::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.02em;
+  color: rgba(252, 249, 249, 0.5);
+}
+
+.order-form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.004em;
+  text-transform: uppercase;
+
+  color: var(--clr-white);
+  background-color: transparent;
+  padding: 14px 36px;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  min-width: 145px;
+  height: 49px;
+
+  transition: border-color var(--tns-cubic), box-shadow var(--tns-cubic);
+}
+
+.order-form-btn:focus,
+.order-form-btn:hover {
+  border-color: var(--clr-yellow);
+  box-shadow: 0 0 10px 5px rgba(236, 217, 121, 0.35);
+}
+
+@media screen and (max-width: 767px) {
+  .order-form-btn {
+    margin: 0 auto;
+  }
+  .order-img {
+    display: none;
+  }
+  .order-title {
+    max-width: 335px;
+    margin: 0 auto 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .order-form-input {
+    width: 474px;
+  }
+  .order-form-textarea {
+    width: 474px;
+  }
+  .order-form-btn {
+    padding: 14px 39px;
+    min-width: 168px;
+    height: 50px;
+  }
+  .order-img-wrapper {
+    background-image: url(/img/collection/collection-girl-tablet.jpg);
+    height: 776px;
+    margin-bottom: 70px;
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .order-img-wrapper {
+      background-image: url(/img/collection/collection-girl-tablet@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .order-form-btn {
+    margin-bottom: 100px;
+  }
+
+  .order-ornament {
+    background-image: url(/img/order/order-bg-tablet.png);
+    background-position: bottom left;
+    background-size: auto 484px;
+    background-repeat: no-repeat;
+    max-width: 768px;
+    padding-bottom: 79px;
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .order-ornament {
+      background-image: url(/img/order/order-bg-tablet@2x.png);
+    }
+  }
+}
+
+.order-form-btn-icon {
+  fill: var(--clr-yellow);
+}
+
+.order-form-btn:hover .order-form-btn-icon {
+  -webkit-animation: slide-out-blurred-right 0.7s
+    cubic-bezier(0.755, 0.05, 0.855, 0.06) 0.3s both;
+  animation: slide-out-blurred-right 0.7s cubic-bezier(0.755, 0.05, 0.855, 0.06)
+    0.3s both;
+}
+
+@-webkit-keyframes slide-out-blurred-right {
+  0% {
+    -webkit-transform: rotate(0deg) translateX(0) scaleY(1) scaleX(1);
+    transform: rotate(0deg) translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(30deg) translateX(1000px) scaleX(2) scaleY(0.2);
+    transform: rotate(30deg) translateX(1000px) scaleX(2) scaleY(0.2);
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0;
+  }
+}
+@keyframes slide-out-blurred-right {
+  0% {
+    -webkit-transform: rotate(0deg) translateX(0) scaleY(1) scaleX(1);
+    transform: rotate(30deg) translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(1000px) scaleX(2) scaleY(0.2);
+    transform: translateX(1000px) scaleX(2) scaleY(0.2);
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0;
+  }
+}
+
+.order-img {
+  margin-left: auto;
+}
+
+@media screen and (min-width: 1280px) {
+  .order-main-box {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+  }
+  .order-ornament {
+    background-image: url(/img/order/order-bg-desktop.png);
+    background-position: bottom 0px left;
+    background-size: auto 484px;
+    background-repeat: no-repeat;
+    max-width: 1280px;
+  }
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .order-ornament {
+      background-image: url(/img/order/order-bg-desktop@2x.png);
+    }
+  }
+  .order-img-wrapper {
+    background-image: url(/img/collection/collection-girl-desktop.jpg);
+    margin-bottom: 20px;
+  }
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .order-img-wrapper {
+      background-image: url(/img/collection/collection-girl-desktop@2x.jpg);
+    }
+  }
+}

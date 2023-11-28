@@ -25,14 +25,6 @@
         <picture>
           <source
             srcset="
-              ./img/hero/hero-girl-mobile.jpg    1x,
-              ./img/hero/hero-girl-mobile@2x.jpg 2x
-            "
-            media="(max-width: 767px)"
-            type="image/jpg"
-          />
-          <source
-            srcset="
               ./img/hero/hero-girl-mobile.webp    1x,
               ./img/hero/hero-girl-mobile@2x.webp 2x
             "
@@ -41,12 +33,13 @@
           />
           <source
             srcset="
-              ./img/hero/hero-girl-tablet.jpg    1x,
-              ./img/hero/hero-girl-tablet@2x.jpg 2x
+              ./img/hero/hero-girl-mobile.jpg    1x,
+              ./img/hero/hero-girl-mobile@2x.jpg 2x
             "
-            media="(min-width: 768px)"
+            media="(max-width: 767px)"
             type="image/jpg"
           />
+
           <source
             srcset="
               ./img/hero/hero-girl-tablet.webp    1x,
@@ -57,12 +50,13 @@
           />
           <source
             srcset="
-              ./img/hero/hero-girl-desktop.jpg    1x,
-              ./img/hero/hero-girl-desktop@2x.jpg 2x
+              ./img/hero/hero-girl-tablet.jpg    1x,
+              ./img/hero/hero-girl-tablet@2x.jpg 2x
             "
-            media="(min-width: 1280px)"
+            media="(min-width: 768px)"
             type="image/jpg"
           />
+
           <source
             srcset="
               ./img/hero/hero-girl-desktop.webp    1x,
@@ -71,6 +65,15 @@
             media="(min-width: 1280px)"
             type="image/webp"
           />
+          <source
+            srcset="
+              ./img/hero/hero-girl-desktop.jpg    1x,
+              ./img/hero/hero-girl-desktop@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+            type="image/jpg"
+          />
+
           <img
             class="hero-img-girl"
             src="./img/hero/hero-girl-mobile.jpg"
@@ -95,18 +98,10 @@
       <picture>
         <source
           srcset="
-            ./img/hero/hero-map-tablet.jpg    1x,
-            ./img/hero/hero-map-tablet@2x.jpg 2x
+            ./img/hero/hero-map-desktop.webp    1x,
+            ./img/hero/hero-map-desktop@2x.webp 2x
           "
-          media="(min-width: 768px)"
-          type="image/jpg"
-        />
-        <source
-          srcset="
-            ./img/hero/hero-map-tablet.webp    1x,
-            ./img/hero/hero-map-tablet@2x.webp 2x
-          "
-          media="(min-width: 768px)"
+          media="(min-width: 1280px)"
           type="image/webp"
         />
         <source
@@ -119,11 +114,19 @@
         />
         <source
           srcset="
-            ./img/hero/hero-map-desktop.webp    1x,
-            ./img/hero/hero-map-desktop@2x.webp 2x
+            ./img/hero/hero-map-tablet.webp    1x,
+            ./img/hero/hero-map-tablet@2x.webp 2x
           "
-          media="(min-width: 1280px)"
+          media="(min-width: 768px)"
           type="image/webp"
+        />
+        <source
+          srcset="
+            ./img/hero/hero-map-tablet.jpg    1x,
+            ./img/hero/hero-map-tablet@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+          type="image/jpg"
         />
         <img
           class="hero-img-sock"
@@ -132,6 +135,7 @@
           loading="lazy"
         />
       </picture>
+      <div class="empty-box" id="about"></div>
     </div>
   </div>
 </section>

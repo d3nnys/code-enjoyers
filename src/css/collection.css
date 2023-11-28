@@ -1,10 +1,26 @@
-.collection {
+.page-collection {
   display: block;
+
+  padding-top: 9px;
+  padding-bottom: 80px;
+}
+
+.collection-ornament {
   background-image: url(/img/collection/collection-bg-mobile.png);
   background-repeat: no-repeat;
-  background-position: left 283px;
-  padding-top: 18px;
-  padding-bottom: 80px;
+  background-position: left 0px top 241px;
+  background-size: auto 177px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+@media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
+  .collection-ornament {
+    background-image: url(/img/collection/collection-bg-mobile@2x.png);
+    background-size: auto 177px;
+  }
 }
 
 .collection-title {
@@ -46,11 +62,25 @@
 }
 
 @media screen and (min-width: 768px) {
-  .collection {
+  .page-collection {
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+
+  .collection-ornament {
     background-image: url(/img/collection/collection-bg-tablet.png);
-    background-position: left 260px;
-    padding-top: 50px;
-    padding-bottom: 100px;
+    background-position: left 29px top 322px;
+    max-width: 768px;
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .collection-ornament {
+      background-image: url(/img/collection/collection-bg-tablet@2x.png);
+      background-size: auto 300px;
+      background-position: left 17px top 200px;
+    }
   }
 
   .collection-title {
@@ -85,18 +115,33 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .collection {
-    background-image: url(/img/collection/collection-bg-desktop.png);
-    background-position: left 279px;
-    background-size: auto;
-    padding-top: 70px;
+  .page-collection {
+    padding-top: 35px;
     padding-bottom: 75px;
   }
+
+  .collection-ornament {
+    background-image: url(/img/collection/collection-bg-desktop.png);
+    background-position: left -2px top 220px;
+    background-size: auto 300px;
+    max-width: 1280px;
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .collection-ornament {
+      background-image: url(/img/collection/collection-bg-desktop@2x.png);
+      background-size: auto 300px;
+      /* background-position: left 17px top 223px; */
+    }
+  }
+
   .collection-list {
     column-gap: 20px;
     row-gap: 40px;
   }
   .collection-item {
-    width: calc((100% - 235px) / 3);
+    width: calc((100% - 77px) / 3); /*235*/
   }
 }

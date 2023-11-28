@@ -3,46 +3,12 @@
 }
 
 .hero-link {
-  transition: border-color var(--tns-cubic), box-shadow var(--tns-cubic);
-}
-
-.hero-link:hover .rotate-scale-up {
-  -webkit-animation: rotate-scale-up 1s linear both;
-  animation: rotate-scale-up 1s linear both;
-}
-
-@-webkit-keyframes rotate-scale-up {
-  0% {
-    -webkit-transform: scale(1) rotateZ(0);
-    transform: scale(1) rotateZ(0);
-  }
-  50% {
-    -webkit-transform: scale(2) rotateZ(180deg);
-    transform: scale(2) rotateZ(180deg);
-  }
-  100% {
-    -webkit-transform: scale(1) rotateZ(360deg);
-    transform: scale(1) rotateZ(360deg);
-  }
-}
-
-@keyframes rotate-scale-up {
-  0% {
-    -webkit-transform: scale(1) rotateZ(0);
-    transform: scale(1) rotateZ(0);
-  }
-  50% {
-    -webkit-transform: scale(2) rotateZ(180deg);
-    transform: scale(2) rotateZ(180deg);
-  }
-  100% {
-    -webkit-transform: scale(1) rotateZ(360deg);
-    transform: scale(1) rotateZ(360deg);
-  }
+  transition: border-color var(--tns-cubic), box-shadow var(--tns-cubic),
+    transform var(--tns-cubic);
 }
 
 .hero-link:hover .hero-icon-arrow {
-  transform: rotate(1turn);
+  transform: rotate(120deg);
 }
 
 .hero-link:hover,
@@ -212,12 +178,18 @@
     padding-top: 15px;
   }
   .hero-img-girl {
-    margin-right: 50px;
+    margin-right: 40px; /*50*/
   }
   .hero-box {
     margin-left: auto;
   }
   .hero-title {
     max-width: 518px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .hero-link:hover .hero-icon-arrow {
+    transform: rotate(110deg);
   }
 }

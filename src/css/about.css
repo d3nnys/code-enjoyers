@@ -1,7 +1,24 @@
 .page-about {
+  padding-bottom: 9px;
+}
+
+.about-ornament {
+  padding-bottom: 60px;
   background-image: url(/img/about/about-bg-mobile.png);
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: bottom 1px right 0px;
+  background-size: auto 408px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+@media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
+  .collection-ornament {
+    background-image: url(/img/about/about-bg-mobile@2x.png);
+    background-size: auto 408px;
+  }
 }
 
 .about-title {
@@ -41,6 +58,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .page-about {
+    padding-bottom: 25px;
+  }
   .about-title {
     font-size: 44px;
     font-weight: 500;
@@ -55,8 +75,21 @@
     font-size: 16px;
     max-width: 704px;
   }
-  .page-about {
+  .about-ornament {
+    padding-bottom: 60px;
     background-image: url(/img/about/about-bg-tablet.png);
+    background-repeat: no-repeat;
+    background-position: bottom 1px right -5px;
+    background-size: auto 484px;
+    max-width: 768px;
+  }
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .collection-ornament {
+      background-image: url(/img/about/about-bg-tablet@2x.png);
+      background-size: auto 484px;
+    }
   }
 }
 
@@ -67,8 +100,21 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .page-about {
+  .about-ornament {
+    padding-bottom: 80px;
     background-image: url(/img/about/about-bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: bottom 0px right 0px;
+    background-size: auto 484px;
+    max-width: 1280px;
+  }
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .collection-ornament {
+      background-image: url(/img/about/about-bg-desktop@2x.png);
+      background-size: auto 484px;
+    }
   }
   .about-main-box {
     display: flex;
@@ -82,5 +128,8 @@
     flex-direction: column;
     align-items: flex-start;
     max-width: 436px;
+  }
+  .page-about {
+    padding-bottom: 35px;
   }
 }
