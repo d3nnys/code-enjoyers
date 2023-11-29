@@ -3,18 +3,30 @@
     <h2 class="testimonials-title">Testimonials</h2>
     <ul class="testimonials-list">
       <li class="testimonials-list-item">
-        <img
-          class="testimonials-list-item-img"
-          srcset="
-            ./img/testimonials/maria.png    1x,
-            ./img/testimonials/maria@2x.png 2x
-          "
-          src="./img/testimonials/maria.png"
-          alt="maria"
-          width="64"
-          height="64"
-          loading="lazy"
-        />
+        <picture>
+          <source
+            srcset="
+              ./img/testimonials/maria.webp    1x,
+              ./img/testimonials/maria@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./img/testimonials/maria.png    1x,
+              ./img/testimonials/maria@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="testimonials-list-item-img"
+            src="./img/testimonials/maria.png"
+            alt="maria"
+            width="64"
+            height="64"
+            loading="lazy"
+          />
+        </picture>
         <h3 class="testimonials-list-item-subtitle first-title">
           Maria Tkachuk
         </h3>
@@ -26,18 +38,31 @@
         </p>
       </li>
       <li class="testimonials-list-item testimonials-second-item">
-        <img
-          class="testimonials-list-item-img"
-          srcset="
-            ./img/testimonials/sergey.png    1x,
-            ./img/testimonials/sergey@2x.png 2x
-          "
-          src="./img/testimonials/sergey.png"
-          alt="sergey"
-          width="64"
-          height="64"
-          loading="lazy"
-        />
+        <picture>
+          <source
+            srcset="
+              ../img/testimonials/sergey.webp    1x,
+              ../img/testimonials/sergey@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ../img/testimonials/sergey.png    1x,
+              ../img/testimonials/sergey@2x.png 2x
+            "
+            type="image/png"
+          />
+
+          <img
+            class="testimonials-list-item-img"
+            src="./img/testimonials/sergey.png"
+            alt="sergey"
+            width="64"
+            height="64"
+            loading="lazy"
+          />
+        </picture>
         <h3 class="testimonials-list-item-subtitle second-title">
           Sergey Rybachok
         </h3>
@@ -49,18 +74,31 @@
         </p>
       </li>
       <li class="testimonials-list-item testimonials-third-item float-shadow">
-        <img
-          class="testimonials-list-item-img"
-          srcset="
-            ./img/testimonials/natalia.png    1x,
-            ./img/testimonials/natalia@2x.png 2x
-          "
-          src="./img/testimonials/natalia.png"
-          alt="natalia"
-          width="64"
-          height="64"
-          loading="lazy"
-        />
+        <picture>
+          <source
+            srcset="
+              ../img/testimonials/natalia.webp    1x,
+              ../img/testimonials/natalia@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ../img/testimonials/natalia.png    1x,
+              ../img/testimonials/natalia@2x.png 2x
+            "
+            type="image/png"
+          />
+
+          <img
+            class="testimonials-list-item-img"
+            src="./img/testimonials/natalia.png"
+            alt="natalia"
+            width="64"
+            height="64"
+            loading="lazy"
+          />
+        </picture>
         <h3 class="testimonials-list-item-subtitle third-title">
           Natalia Chatuk
         </h3>

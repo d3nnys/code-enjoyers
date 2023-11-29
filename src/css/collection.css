@@ -10,6 +10,11 @@
   background-size: auto 177px;
   max-width: 320px;
   margin: 0 auto;
+
+  background-image: -webkit-image-set(
+    '/img/collection/collection-bg-mobile.webp'
+  );
+  background-image: image-set('/img/collection/collection-bg-mobile.webp');
 }
 
 @media screen and (min-resolution: 192dpi),
@@ -18,6 +23,17 @@
   .collection-ornament {
     background-image: url(/img/collection/collection-bg-mobile@2x.png);
     background-size: auto 177px;
+  }
+}
+
+@media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
+  .collection-ornament {
+    background-image: -webkit-image-set(
+      '/img/collection/collection-bg-mobile@2x.webp'
+    );
+    background-image: image-set('/img/collection/collection-bg-mobile@2x.webp');
   }
 }
 
@@ -69,6 +85,10 @@
     background-image: url(/img/collection/collection-bg-tablet.png);
     background-position: left 29px top 322px;
     max-width: 768px;
+    background-image: -webkit-image-set(
+      '/img/collection/collection-bg-tablet.webp'
+    );
+    background-image: image-set('/img/collection/collection-bg-tablet.webp');
   }
 
   @media screen and (min-resolution: 192dpi),
@@ -78,6 +98,19 @@
       background-image: url(/img/collection/collection-bg-tablet@2x.png);
       background-size: auto 300px;
       background-position: left 17px top 200px;
+    }
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .collection-ornament {
+      background-image: -webkit-image-set(
+        '/img/collection/collection-bg-tablet@2x.webp'
+      );
+      background-image: image-set(
+        '/img/collection/collection-bg-tablet@2x.webp'
+      );
     }
   }
 
@@ -123,6 +156,11 @@
     background-position: left -2px top 220px;
     background-size: auto 300px;
     max-width: 1280px;
+
+    background-image: -webkit-image-set(
+      '/img/collection/collection-bg-desktop.webp'
+    );
+    background-image: image-set('/img/collection/collection-bg-desktop.webp');
   }
 
   @media screen and (min-resolution: 192dpi),
@@ -132,6 +170,18 @@
       background-image: url(/img/collection/collection-bg-desktop@2x.png);
       background-size: auto 300px;
       /* background-position: left 17px top 223px; */
+    }
+  }
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .collection-ornament {
+      background-image: -webkit-image-set(
+        '/img/collection/collection-bg-desktop@2x.webp'
+      );
+      background-image: image-set(
+        '/img/collection/collection-bg-desktop@2x.webp'
+      );
     }
   }
 

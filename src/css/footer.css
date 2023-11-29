@@ -45,12 +45,24 @@
     background-position: 50% 100%;
     background-size: 401px auto;
     background-repeat: no-repeat;
+
+    background-image: -webkit-image-set('/img/footer/footer-mobile.webp');
+    background-image: image-set('/img/footer/footer-mobile.webp');
   }
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
     screen and (min-device-pixel-ratio: 2) {
     .page-footer {
       background-image: url(/img/footer/footer-mobile@2x.png);
+    }
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .page-footer {
+      background-image: -webkit-image-set('/img/footer/footer-mobile@2x.webp');
+      background-image: image-set('/img/footer/footer-mobile@2x.webp');
     }
   }
 }
@@ -74,6 +86,9 @@
     padding-bottom: 40px;
     max-width: 768px;
     margin: 0 auto;
+
+    background-image: -webkit-image-set('/img/footer/footer-bg-tablet.webp');
+    background-image: image-set('/img/footer/footer-bg-tablet.webp');
   }
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
@@ -81,6 +96,17 @@
     .footer-ornament {
       background-image: url(/img/footer/footer-bg-tablet@2x.png);
       background-size: auto 401px;
+    }
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .footer-ornament {
+      background-image: -webkit-image-set(
+        '/img/footer/footer-bg-tablet@2x.webp'
+      );
+      background-image: image-set('/img/footer/footer-bg-tablet@2x.webp');
     }
   }
 
@@ -110,6 +136,8 @@
 
     max-width: 1280px;
     margin: 0 auto;
+    background-image: -webkit-image-set('/img/footer/footer-bg-desktop.webp');
+    background-image: image-set('/img/footer/footer-bg-desktop.webp');
   }
 
   @media screen and (min-resolution: 192dpi),
@@ -120,6 +148,18 @@
       background-size: contain;
     }
   }
+
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .footer-ornament {
+      background-image: -webkit-image-set(
+        '/img/footer/footer-bg-desktop@2x.webp'
+      );
+      background-image: image-set('/img/footer/footer-bg-desktop@2x.webp');
+    }
+  }
+
   .footer-title {
     font-size: 64px;
     line-height: 1.15;
