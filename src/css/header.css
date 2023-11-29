@@ -62,11 +62,12 @@
 }
 
 .mobile-menu-open-btn {
-  width: 43px;
-  height: 36px;
+  width: 36px;
+  height: 23px;
   background: transparent;
   border: none;
   margin-left: 12px;
+  padding: 0;
 }
 
 .mobile-menu-btn-icon {
@@ -76,13 +77,13 @@
 /* HEADER TABLET */
 @media screen and (min-width: 768px) {
   .mobile-menu-open-btn {
-    width: 47px;
-    height: 33px;
+    width: 44px;
+    height: 29px;
     margin-left: 20px;
   }
   .mobile-menu-btn-icon {
-    width: 41px;
-    height: 32px;
+    width: 44px;
+    height: 30px;
   }
 }
 

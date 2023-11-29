@@ -2,8 +2,9 @@
   background-image: url(/img/collection/collection-girl-mobile.jpg);
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
   height: 550px;
-  margin-bottom: 80px;
+  margin: 0 auto 80px;
 }
 
 @media screen and (min-resolution: 192dpi),
@@ -11,6 +12,25 @@
   screen and (min-device-pixel-ratio: 2) {
   .order-img-wrapper {
     background-image: url(/img/collection/collection-girl-mobile@2x.jpg);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .order-img-wrapper {
+    background-image: url(/img/collection/collection-girl-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 550px;
+    margin: 0 auto 80px;
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .order-img-wrapper {
+      background-image: url(/img/collection/collection-girl-mobile@2x.jpg);
+    }
   }
 }
 
@@ -72,6 +92,7 @@
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.02em;
+  background-color: transparent;
   color: rgba(252, 249, 249, 0.5);
 }
 
@@ -163,7 +184,7 @@
   .order-img-wrapper {
     background-image: url(/img/collection/collection-girl-tablet.jpg);
     height: 776px;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
   }
 
   @media screen and (min-resolution: 192dpi),
@@ -276,7 +297,7 @@
   }
   .order-img-wrapper {
     background-image: url(/img/collection/collection-girl-desktop.jpg);
-    margin-bottom: 20px;
+    margin-bottom: 150px;
   }
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
