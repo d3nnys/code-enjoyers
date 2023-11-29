@@ -77,13 +77,19 @@
   }
 }
 
+@media screen and (max-height: 460px) {
+  .mobile-menu-list {
+    padding-top: 40px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .mobile-menu {
     width: 380px;
   }
 
   .mobile-half-box {
-    height: 35%;
+    height: 30%;
   }
 
   .menu-tel {
