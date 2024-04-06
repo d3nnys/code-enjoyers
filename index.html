@@ -7,7 +7,7 @@
     <title>Vyshyvanka Vibes</title>
     
     <script type="module" crossorigin src="/code-enjoyers/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/code-enjoyers/assets/index-6b78a676.css">
+    <link rel="stylesheet" href="/code-enjoyers/assets/index-9b9704f9.css">
   </head>
   <body>
     <header class="page-header">
@@ -558,6 +558,7 @@
                   placeholder="Enter your full name"
                   pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐйЙʼ]+"
                   required
+                  minlength="2"
                 />
               </div>
               <div class="order-form-input-wrapper">
@@ -565,7 +566,7 @@
                   class="order-form-input"
                   type="email"
                   name="user-mail"
-                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
                   placeholder="Enter your email"
                   required
                 />
