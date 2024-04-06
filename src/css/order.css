@@ -400,3 +400,10 @@
     }
   }
 }
+
+.order-form-input-wrapper:has(> input:valid) {
+  & .order-form-input {
+    border: 1px solid rgb(63, 145, 63);
+  }
+  /* "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  */
+}
